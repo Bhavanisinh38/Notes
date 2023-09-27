@@ -10,13 +10,14 @@
 Git Notes Notes
 ===============
 :- $ git -version
+:- touch .gitignore
+:- (editor name) (file_name)
 
 Common Command
 ==============
 ls
 ls -lart
 clear
-touch
 Q for Quets
 
 (01) Initialization
@@ -130,13 +131,12 @@ git config user.email
 12.3 $ git fetch (remote_name) {Fetch changes from a specific remote}
 
 
-
+(13) Removed Files with Command
+--------------------------------
+13.1 $ git rm (file_name)
+13.2 $ git rm --cached (file_name)
 
 <!--
-30. 
-git rm (file_name)
-git rm --cached (file_name)
-
 31. Undoing Changes:
 git revert <commit_id>: Create a new commit that undoes changes from a specific commit.
 
