@@ -9,6 +9,7 @@
 <pre>
 Git Notes Notes
 ===============
+:- $ git -version
 
 Common Command
 ==============
@@ -119,44 +120,36 @@ git config user.email
 11.6 $ git push origin --delete (branch_name)
 
 
-<!-- (12) Remove File & Folder
--------------------------
-12.1 $ git rm  file-name-here...
-12.2 $ git rm --cached file-name-here... -->
+(12) Remote Repository Interaction
+----------------------------------
+12.1 $ git remote
+12.2 $ git remote -v {List all remote repositories.}
+12.3 $ git remote add (remote_name) (repository_url)  {Add a new remote repository}
+12.3 $ git remote remove (remote_name) {Remove a remote repository}
+12.3 $ git remote rename (old_name) (new_name) {Rename a remote}
+12.3 $ git fetch (remote_name) {Fetch changes from a specific remote}
+
+
+
 
 <!--
-git remote
-git remote -v
-git remote set-url (SHH URL) 
--->
+30. 
+git rm (file_name)
+git rm --cached (file_name)
 
-
-<!-- Remote Repository Interaction:
-21. git remote -v: List all remote repositories.
-25. git remote add <remote_name> <repository_url>: Add a new remote repository.
-
-
-git remote remove <remote_name>: Remove a remote repository.
-git remote rename <old_name> <new_name>: Rename a remote.
-git fetch <remote_name>: Fetch changes from a specific remote.
-Undoing Changes:
-29. git reset <commit_id>: Reset to a specific commit (use with caution).
-
+31. Undoing Changes:
 git revert <commit_id>: Create a new commit that undoes changes from a specific commit.
-git checkout -- <file_name>: Discard changes in a specific file.
-Tagging:
-32. git tag: List all tags.
 
+32. git tag: List all tags.
 git tag <tag_name>: Create a new tag.
 git tag -a <tag_name> -m "Tag message": Create an annotated tag.
 Miscellaneous:
-35. git clean -n: Dry-run of the "clean" command to show what would be removed.
 
+33. git clean -n: Dry-run of the "clean" command to show what would be removed.
 git clean -f: Remove untracked files from the working directory.
 git stash: Temporarily save changes that are not ready to be committed.
 git blame <file_name>: Show who made changes to a file and when.
-
-These are some of the most commonly used Git commands. Remember to refer to the official Git documentation for more details and advanced usage of these commands. -->
+ -->
 
 </pre>   
 </body>
