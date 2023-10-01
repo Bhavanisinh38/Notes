@@ -85,6 +85,9 @@ git config user.email
 6.2.2 $ git checkout .
 6.2.3 $ git checkout -f
 
+6.3.1 $ git revert (commit_id)
+{Create a new commit that undoes changes from a specific commit}
+
 
 (07) Pull & Push
 ----------------
@@ -136,20 +139,27 @@ git config user.email
 13.1 $ git rm (file_name)
 13.2 $ git rm --cached (file_name)
 
-<!--
-31. Undoing Changes:
-git revert <commit_id>: Create a new commit that undoes changes from a specific commit.
 
-32. git tag: List all tags.
-git tag <tag_name>: Create a new tag.
-git tag -a <tag_name> -m "Tag message": Create an annotated tag.
-Miscellaneous:
+(14) List all tags
+--------------------------------
+14.1 $ git tag <tag_name> {Create a new tag}
+14.2 $ git tag -a <tag_name> -m "Tag message" {Create an annotated tag}
+14.3 Miscellaneous
 
-33. git clean -n: Dry-run of the "clean" command to show what would be removed.
-git clean -f: Remove untracked files from the working directory.
-git stash: Temporarily save changes that are not ready to be committed.
-git blame <file_name>: Show who made changes to a file and when.
- -->
+
+(15) Other
+--------------------------------
+15.1 $ git clean --oneline
+{Dry-run of the "clean" command to show what would be removed.}
+
+15.2 $ git clean -f
+{Remove untracked files from the working directory}
+
+15.3 $ git stash
+{Temporarily save changes that are not ready to be committed}
+
+15.4 $ git blame (file_name)
+{Show who made changes to a file and when.}
 
 </pre>   
 </body>
